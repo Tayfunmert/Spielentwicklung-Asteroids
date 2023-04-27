@@ -60,9 +60,9 @@ public class Player : MonoBehaviour
         blast.Project(this.transform.up);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject)
-    }
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if (collision.gameObject)
+    // }
 
 }
