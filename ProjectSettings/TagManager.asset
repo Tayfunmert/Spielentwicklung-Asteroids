@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - KiBlast
+  - Asteroid
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - KiBlast
   - Asteroid
   - Boundary
-  - 
+  - Ignore Collisions
   - 
   - 
   - 

@@ -45,7 +45,7 @@ public class Asteroid : MonoBehaviour
     {
         if (collision.gameObject.tag == "KiBlast")
         {
-            if ((this.size/2) >= this.minSize)
+            if ((this.size * 0.5f) >= this.minSize)
             {
                 CreateSplit();
                 CreateSplit();
@@ -58,7 +58,7 @@ public class Asteroid : MonoBehaviour
     private void CreateSplit()
     {
         Vector2 position = this.transform.position;
-        position += Random.insideUnitCircle/2;
+        position += Random.insideUnitCircle * 0.5f;
 
         Asteroid half = Instantiate(this, position, this.transform.rotation);
         half.size = this.size/2;
